@@ -1,0 +1,99 @@
+.game-page > div {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.inactive {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.cells {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cells > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    cursor: pointer;
+
+    color: rgb(59, 51, 38);
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+.cells > div:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.verticals {
+    padding: 0px 35px;
+    display: flex;
+}
+
+.verticals > div {
+    height: 100%;
+    width: 10px;
+    margin: 0px 35px;
+    border-radius: 10px;
+    background-color: rgb(59, 51, 38);
+}
+
+.horizontals {
+    padding: 35px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontals > div {
+    width: 100%;
+    height: 10px;
+    margin: 35px 0px;
+    border-radius: 10px;
+    background-color: rgb(59, 51, 38);
+}
+
+.game-page > .info {
+    position: absolute;
+    display: grid;
+    grid-template-columns: calc(100% - 80px) 80px;
+    width: 220px;
+    height: 100px;
+
+    padding: 10px 20px;
+    border: 4px solid rgb(59, 51, 38);
+    border-radius: 20px;
+
+    right: 60px;
+    top: calc(50% - 108px / 2);
+}
+
+.info > .static {
+    display:inline;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.info > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 16px;
+    font-weight: 700;
+}

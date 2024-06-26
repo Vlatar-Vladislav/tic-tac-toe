@@ -1,0 +1,90 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: blanchedalmond;
+    height: 100vh;
+}
+
+body > div {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    left: 0px;
+    top: 60px;
+    width: 100%;
+    height: calc(100% - 60px);
+    background-color: blanchedalmond;
+
+    opacity: 1;
+}
+
+body > header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0px 70px 0px 70px;
+    height: 60px;
+    background-color: rgb(59, 51, 38);
+    
+    font-size: 32px;
+    color: blanchedalmond;
+    font-weight: 700;
+}
+
+#back-button {
+    position: absolute;
+    right: 60px;
+    top: calc(50% - 11px);
+
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+
+    font-size: 22px;
+    color: blanchedalmond;
+    font-weight: 700;
+}
+
+#back-button:hover {
+    color: red;
+}
+
+.inactive {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 300px;
+    border: 5px solid rgb(59, 51, 38);
+    border-radius: 60px;
+    height: 400px;
+}
+
+.menu > button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    width: 100%;
+    padding: 10px 0px;
+    cursor: pointer;
+
+    color: rgb(59, 51, 38);
+    font-size: 22px;
+    font-weight: 600;
+
+    /* border-bottom: 2px solid rgb(59, 51, 38);
+    border-top: 2px solid rgb(59, 51, 38); */
+}
+
+.menu > button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}

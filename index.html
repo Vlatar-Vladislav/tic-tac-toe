@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/game-page-styles.css">
+    <link rel="stylesheet" type="text/css" href="css/main-page-styles.css">
+    <link rel="stylesheet" type="text/css" href="css/settings-page-styles.css">
+    <link rel="stylesheet" type="text/css" href="css/windows.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <span>Tic-Tac-Toe.com</span>
+        <button id="back-button" class="inactive">назад</button>
+    </header>
+    <div id="menu-page">
+        <div class="menu">
+            <button id="new-game-button">Новая игра</button>
+            <button id="settings-button">Настройки</button>
+        </div>
+    </div>
+    <div id="settings-page" class="inactive">
+        <div class="settings">
+            <div>
+                <span class="title">Количество клеточек по горизонтали и вертикали:</span>
+                <button id="quantity-minus" class="settings-button">-</button>
+                <span id="quantity-squares">3</span>
+                <button id="quantity-plus" class="settings-button">+</button>
+            </div>
+            <div>
+                <span class="title">Первыми ходят:</span>
+                <span class="text">Крестики</span>
+                <input id="cross-check" type="checkbox" checked/>
+                <input id="zero-check" type="checkbox"/>
+                <span class="text">Нолики</span>
+            </div>
+        </div>
+    </div>
+    <div id="game-page" class="game-page inactive">
+        <div class="info">
+            <span class="static">Текущий игрок:</span><span id="current-player">крестики</span>
+            <span class="static">Ход номер:</span><span id="current-move">1</span>
+        </div>
+        <div>
+            <div class="verticals" style="height: 240px">
+            </div>
+        </div>
+        <div>
+            <div class="horizontals" style="width: 240px">
+            </div>
+        </div>
+        <div>
+            <div class="cells" style="width: 240px">
+            </div>
+        </div>
+    </div>
+    <div class="windows inactive">
+        <div id="victory-window" class="inactive">
+            <h3>Победа крестиков!</h3>
+            <button>Ок</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
